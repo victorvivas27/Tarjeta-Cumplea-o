@@ -1,6 +1,6 @@
 import { useState } from "react"
-import Navbar from "../components/navbar/Navbar"
 import CardList from "../components/cardList/CardLIst"
+import Header from "../components/header/Header"
 
 
 const Home = () => {
@@ -8,66 +8,86 @@ const Home = () => {
         nombre: "Theo Amiel",
         edad: 6,
         fecha: "Sábado 11 de Octubre",
-        hora: "13:00 - 15:30",
+        hora: "De 13:00 hs a 15:30 hs",
         lugar: "Happy Gol",
         direccion: "Av. Circunvalación las Flores 13.000, Las Condes",
         recinto: "Universidad Católica",
         imagen_01: "/coco_01.png",
         imagen_02: "/coco_02.png",
         imagen_03: "/coco_03.png",
+        imagen_04: "/coco_04.png",
+        imagen_05: "/coco_05.png",
+        imagen_09: "/coco_09.png",
+        imagen_08: "/coco_08.png",
+
     }
 
     const detalles = [
         {
-            label: "Quien es",
-            texto: `🎉 Cumpleaños de ${evento.nombre} 🎉`,
-            imagen: evento.imagen_01
+            label: "🎉 El cumpleañero",
+            texto: `¡Fiesta de ${evento.nombre}!`,
+            imagen: evento.imagen_01,
         },
         {
-            label: "Cuantos Años",
-            texto: `🎂 Cumplo ${evento.edad} años`,
-            imagen: evento.imagen_02
+            label: "🎂 Mi edad",
+            texto: `Cumplo ${evento.edad} añitos 🥳`,
+            imagen: evento.imagen_02,
         },
         {
-            label: "Que fecha lo realizo",
-            texto: `📅 ${evento.fecha}`,
-            imagen: evento.imagen_03
+            label: "🗓️​ La fecha",
+            texto: `${evento.fecha}`,
+            imagen: evento.imagen_03,
         },
         {
-            label: "Hora te espero",
-            texto: `🕐 ${evento.hora}`,
-            imagen: null
+            label: "⏰ El horario",
+            texto: `De ${evento.hora}`,
+            imagen: evento.imagen_04,
         },
         {
-            label: "Lugar del evento",
-            texto: `📍 ${evento.lugar}`,
-            imagen: null
+            label: "📍 El lugar",
+            texto: (
+                <a
+                    href="https://maps.app.goo.gl/RJfFQtPBDW5ungmK6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "#ff5722" }}
+                >
+                    {evento.lugar}
+                </a>
+            ),
+            imagen: evento.imagen_05,
         },
         {
-            label: "Dirección asi no te pierdes",
-            texto: evento.direccion,
-            imagen: null
+            label: "🗺️ La dirección",
+            texto: (
+                <a
+                    href="https://maps.app.goo.gl/RJfFQtPBDW5ungmK6"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "#ff5722" }}
+                >
+                    {evento.direccion}
+                </a>
+            ),
+            imagen: evento.imagen_09,
         },
         {
-            label: "Recinto de la fiesta",
-            texto: evento.recinto,
-            imagen: null
+            label: "🏟️ El recinto",
+            texto: `${evento.recinto}`,
+            imagen: evento.imagen_08,
         },
         {
-            label: "Fotos",
-            texto: "📸 Recuerdos del cumple",
-            imagen: evento.imagen
+            label: "📸 Unas Fotitos mías",
+            texto: "Recuerdos del cumple 🎊",
+            imagen: evento.imagen,
         },
-    ]
+    ];
 
     const [selected, setSelected] = useState(detalles[0])
 
     return (
         <main>
-            {/* Navbar con botones */}
-            <Navbar detalles={detalles} selected={selected} setSelected={setSelected} />
-
-            {/* CardList que recibe el detalle activo */}
+            <Header detalles={detalles} selected={selected} setSelected={setSelected} />
             <section id="cards">
                 <CardList selected={selected} />
             </section>

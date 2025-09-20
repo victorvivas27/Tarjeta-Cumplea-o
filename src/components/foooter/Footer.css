@@ -6,37 +6,31 @@
     border-top-right-radius: 15px;
     box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.25);
     font-family: 'Comic Sans MS', cursive, sans-serif;
-
-    /* Flex para alinear */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+        position: relative;
         bottom: 0;
         left: 0;
         width: 100%;
 }
 
-/* Texto */
+
 .footer p {
     margin: 0;
     font-size: 1.5rem;
 }
 
-/* Logo */
 .logo-footer {
     width: 140px;
     opacity: 0.9;
 }
-
-/* 📱 Mobile: centrado */
 @media (max-width: 600px) {
     .footer {
         flex-direction: column;
         gap: 0.5rem;
         text-align: center;
     }
-        /* Texto */
         .footer p {
             margin: 0;
             font-size: 0.9rem;
@@ -45,4 +39,31 @@
     .logo-footer {
         width: 105px;
     }
+}
+
+.wa-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+.wa-link {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    text-decoration: none;
+    color: white;
+    background: #25d366;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.wa-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(37, 211, 102, 0.4);
+}
+
+.wa-icon {
+    font-size: 1.2rem;
 }

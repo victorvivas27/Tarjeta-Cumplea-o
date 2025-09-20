@@ -1,5 +1,6 @@
 "use client"
 
+// eslint-disable-next-line no-unused-vars
 import { AnimatePresence, motion } from "motion/react"
 import "./Card.css"
 
@@ -15,10 +16,7 @@ const Card = ({ selected }) => {
                     transition={{ duration: 0.4 }}
                     className="detalle"
                 >
-                    {/* Texto principal */}
                     <p>{selected.texto}</p>
-
-                    {/* Imagen opcional */}
                     {selected.imagen && (
                         <motion.img
                             src={selected.imagen}

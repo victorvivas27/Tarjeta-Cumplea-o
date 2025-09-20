@@ -1,0 +1,39 @@
+.header {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    position: relative;
+}
+
+
+.logo-header {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.header::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 12px;
+    pointer-events: none;
+}
+
+.navbar {
+    border-radius: 12px;
+    width: 100%;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}

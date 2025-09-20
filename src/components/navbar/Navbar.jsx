@@ -1,5 +1,6 @@
 "use client"
 
+// eslint-disable-next-line no-unused-vars
 import { motion } from "motion/react"
 import "./Navbar.css"
 
@@ -7,7 +8,6 @@ const Navbar = ({ detalles, selected, setSelected }) => {
     if (!detalles) return null
     return (
         <nav className="navbar">
-            <h1 className="logo">🎂 Invitación 🎂</h1>
             <ul className="nav-links">
                 {detalles.map((item) => (
                     <motion.li
