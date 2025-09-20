@@ -1,0 +1,48 @@
+.footer {
+    background: linear-gradient(135deg, #ffcc70, #ff6f61);
+    color: rgb(8, 8, 8);
+    padding: 0.8rem 1rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.25);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+
+    /* Flex para alinear */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+}
+
+/* Texto */
+.footer p {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+/* Logo */
+.logo-footer {
+    width: 140px;
+    opacity: 0.9;
+}
+
+/* 📱 Mobile: centrado */
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+        /* Texto */
+        .footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+    .logo-footer {
+        width: 105px;
+    }
+}

@@ -1,0 +1,53 @@
+/* Card principal */
+.card {
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem auto;
+    font-family: 'Roboto', sans-serif;
+    /* 👉 tipografía Roboto */
+    max-width: 600px;
+   
+}
+
+/* Texto destacado */
+.detalle {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff5722;
+    margin-bottom: 0.5rem;
+}
+
+/* Contenido */
+.card-content {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.4;
+}
+
+/* Imagen */
+.imagen {
+    max-width: 100%;
+    /* 👉 se ajusta al ancho */
+    border-radius: 12px;
+    border: 4px solid #ffcc70;
+    margin-top: 1rem;
+    height: auto;
+}
+
+/* 📱 Responsivo */
+@media (max-width: 768px) {
+    .detalle {
+        font-size: 1.5rem;
+    }
+
+    .card-content {
+        font-size: 1rem;
+    }
+
+    .imagen {
+        max-width: 100%;
+    }
+}
