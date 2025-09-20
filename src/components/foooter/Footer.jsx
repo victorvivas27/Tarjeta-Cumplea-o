@@ -23,7 +23,7 @@ const Footer = () => {
                     <FaWhatsapp className="wa-icon" /> Mamá
                 </a>
             </div>
-            <p>© 2025 Invitacion Familiar · Hecho con ❤️</p>
+            <p>© 2025 Invitación Familiar · Hecho con ❤️</p>
 
             <img src={icon_victor} alt="Logo Victor" className="logo-footer" />
 

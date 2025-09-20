@@ -16,7 +16,7 @@ const Home = () => {
         imagen_02: "/coco_02.png",
         imagen_03: "/coco_03.png",
         imagen_04: "/coco_04.png",
-        imagen_05: "/coco_05.png",
+        imagen_11: "/coco_11.webp",
         imagen_09: "/coco_09.png",
         imagen_08: "/coco_08.png",
 
@@ -40,41 +40,33 @@ const Home = () => {
         },
         {
             label: "⏰ El horario",
-            texto: `De ${evento.hora}`,
+            texto: evento.hora,
             imagen: evento.imagen_04,
         },
         {
             label: "📍 El lugar",
             texto: (
-                <a
-                    href="https://maps.app.goo.gl/RJfFQtPBDW5ungmK6"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ color: "#ff5722" }}
-                >
-                    {evento.lugar}
-                </a>
+                <div>
+                    <p><strong>{evento.lugar}</strong></p>
+                    <p>{evento.direccion}</p>
+                    <p>{evento.recinto}</p>
+                    <a
+                        href="https://maps.app.goo.gl/RJfFQtPBDW5ungmK6"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                            color: "#1a73e8",          // azul estilo Google
+                            fontWeight: "600",
+                            textDecoration: "none",
+                        }}
+                        onMouseOver={(e) => (e.currentTarget.style.textDecoration = "underline")}
+                        onMouseOut={(e) => (e.currentTarget.style.textDecoration = "none")}
+                    >
+                        📍 Ver en Google Maps
+                    </a>
+                </div>
             ),
-            imagen: evento.imagen_05,
-        },
-        {
-            label: "🗺️ La dirección",
-            texto: (
-                <a
-                    href="https://maps.app.goo.gl/RJfFQtPBDW5ungmK6"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{ color: "#ff5722" }}
-                >
-                    {evento.direccion}
-                </a>
-            ),
-            imagen: evento.imagen_09,
-        },
-        {
-            label: "🏟️ El recinto",
-            texto: `${evento.recinto}`,
-            imagen: evento.imagen_08,
+            imagen: evento.imagen_11,
         },
         {
             label: "📸 Unas Fotitos mías",
