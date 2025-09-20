@@ -12,7 +12,7 @@ const Home = () => {
         lugar: "Happy Gol",
         direccion: "Av. Circunvalación las Flores 13.000, Las Condes",
         recinto: "Universidad Católica",
-        imagen_01: "/coco_01.png",
+        imagen_12: "/coco_12.png",
         imagen_02: "/coco_02.png",
         imagen_03: "/coco_03.png",
         imagen_04: "/coco_04.png",
@@ -26,7 +26,7 @@ const Home = () => {
         {
             label: "🎉 El cumpleañero",
             texto: `¡Fiesta de ${evento.nombre}!`,
-            imagen: evento.imagen_01,
+            imagen: evento.imagen_12,
         },
         {
             label: "🎂 Mi edad",
