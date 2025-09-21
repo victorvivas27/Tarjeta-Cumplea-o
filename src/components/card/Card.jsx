@@ -16,16 +16,39 @@ const Card = ({ selected }) => {
                     transition={{ duration: 0.4 }}
                     className="detalle"
                 >
-                    <p>{selected.texto}</p>
-                    {selected.imagen && (
-                        <motion.img
-                            src={selected.imagen}
-                            alt={selected.label}
-                            className="imagen"
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
-                            transition={{ duration: 0.5 }}
-                        />
+                    {/* Caso normal */}
+                    {selected.texto && (
+                        <>
+                            <p>{selected.texto}</p>
+                            {selected.imagen && (
+                                <motion.img
+                                    src={selected.imagen}
+                                    alt={selected.label}
+                                    className="imagen"
+                                    initial={{ opacity: 0, scale: 0.9 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    transition={{ duration: 0.5 }}
+                                />
+                            )}
+                        </>
+                    )}
+
+                    {/* Caso "Sobre mí" con lista */}
+                    {selected.items && (
+                        <div className="sobre-mi-grid">
+                            {selected.items.map((item, i) => (
+                                <motion.div
+                                    key={i}
+                                    className="mini-card"
+                                    initial={{ opacity: 0, scale: 0.9 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    transition={{ duration: 0.5, delay: i * 0.1 }}
+                                >
+                                    <img src={item.imagen} alt={item.texto} className="mini-img" />
+                                    <p>{item.texto}</p>
+                                </motion.div>
+                            ))}
+                        </div>
                     )}
                 </motion.div>
             </AnimatePresence>

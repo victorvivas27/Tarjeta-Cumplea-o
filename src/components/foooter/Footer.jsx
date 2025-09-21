@@ -24,10 +24,7 @@ const Footer = () => {
                 </a>
             </div>
             <p>© 2025 Invitación Familiar · Hecho con ❤️</p>
-
             <img src={icon_victor} alt="Logo Victor" className="logo-footer" />
-
-
         </footer>
     );
 };

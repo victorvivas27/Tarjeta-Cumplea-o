@@ -19,6 +19,11 @@ const Home = () => {
         imagen_11: "/coco_11.webp",
         imagen_09: "/coco_09.png",
         imagen_08: "/coco_08.png",
+        theo_deportes: "/theo_deportes.jpeg",
+        theo_juegos: "/theo_juegos.jpeg",
+        theo_familia: "/theo_familia.jpeg",
+        theo_amigos: "/theo_amigos.jpeg",
+        theo_comida: "/theo_comida.jpeg",
 
     }
 
@@ -55,8 +60,7 @@ const Home = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{
-                            color: "#1a73e8",          // azul estilo Google
-                            fontWeight: "600",
+                            color: "#1a73e8",
                             textDecoration: "none",
                         }}
                         onMouseOver={(e) => (e.currentTarget.style.textDecoration = "underline")}
@@ -69,9 +73,32 @@ const Home = () => {
             imagen: evento.imagen_11,
         },
         {
-            label: "📸 Unas Fotitos mías",
-            texto: "Recuerdos del cumple 🎊",
-            imagen: evento.imagen,
+            label: "🎈 Sobre mí",
+            items: [
+                {
+                    texto:
+                        "Deporte: Ama el deporte. Juega al Basquet, Futbol y hace natación. Los tres sus preferidos. Es de  Boca, Belgrano, los cruzados y.. bue multicultural!",
+                    imagen: evento.theo_deportes
+                },
+
+                {
+                    texto: "Juegos: Fans de Mario. Ama compartir momentos de caminata y parques con sus amigos.", imagen: evento.theo_juegos
+
+                },
+                {
+                    texto: "Comida: Sus favoritas con el Sushi, asadito y empandas de su Abuela.", imagen: evento.theo_comida
+
+                },
+                {
+                    texto: "Amigos: Es muy sociable y feliz cuando está rodeado de sus amigos. Compartir con ellos lo hace reír y disfrutar cada momento.",
+                    imagen: evento.theo_amigos
+                },
+                {
+                    texto: "Familia: Ama visitar y compartir con su familia. Siempre está feliz cuando se reencuentra con sus seres queridos.",
+                    imagen: evento.theo_familia
+                },
+            ],
+
         },
     ];
 

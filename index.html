@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
   <title>🎈​ Invitación Theo 🎊</title>
 
   <!-- Open Graph (WhatsApp) -->
@@ -24,8 +27,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background: #0d0d0d;
-      color: #ff7b00;
+      background: #1A1A2E;
+      color: #06ccd3;
       font-family: sans-serif;
       font-size: 1.2rem;
       z-index: 9999;
@@ -62,12 +65,12 @@
   <script type="module" src="/src/main.jsx"></script>
 
   <script>
-    // Cuando React monte, sacamos el loader
+
     window.addEventListener("load", () => {
       setTimeout(() => {
         const loader = document.getElementById("loader");
         if (loader) loader.style.display = "none";
-      }, 1000); // 1 segundo
+      }, 1000);
     });
   </script>
 </body>

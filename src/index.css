@@ -1,11 +1,13 @@
 :root {
-  --font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  --line-height: 1.5;
-  --font-weight: 400;
-  --color-scheme: light dark;
-  --color: rgba(255, 255, 255, 0.87);
-  --background-color: #242424;
-
+  --font-family: "Delius", cursive;
+  --line-height: 1.1;
+  --font-size: 1.3rem;
+  --color: #06ccd3;
+  --color_02: #000000;
+  --background-color: #1A1A2E;
+  --gradiente_01: linear-gradient(135deg, #FF7E00, #FFD93D);
+  --gradiente_02: linear-gradient(135deg, #6A0DAD, #FF4DA6);
+  --gradiente_03: linear-gradient(135deg, #25D366, #54F29D);
   --font-synthesis: none;
   --text-rendering: optimizeLegibility;
   --webkit-font-smoothing: antialiased;
@@ -29,48 +31,18 @@ button,
   -webkit-tap-highlight-color: transparent;
 }
 
-html,
-body,
-#root,
-.App {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
 body {
   font-family: var(--font-family);
+  font-size: var(--font-size);
   line-height: var(--line-height);
-  font-weight: var(--font-weight);
-  color-scheme: var(--color-scheme);
   color: var(--color);
   background-color: var(--background-color);
-
   font-synthesis: var(--font-synthesis);
   text-rendering: var(--text-rendering);
   -webkit-font-smoothing: var(--webkit-font-smoothing);
   -moz-osx-font-smoothing: var(--moz-osx-font-smoothing);
   -webkit-text-size-adjust: var(--webkit-text-size-adjust);
-
-  display: flex;
-  flex-direction: column;
 }
-
 main {
-  flex: 1;
-}
-
-@media (max-width: 768px) {
-  body {
-    min-height: 100vh;
-  }
-
-  .App {
-    display: flex;
-    flex-direction: column;
-  }
-
-  main {
     flex: 1;
   }
-}

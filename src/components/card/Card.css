@@ -1,50 +1,51 @@
 .card {
-   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  text-align: center;
-    margin: 1rem auto;
-    font-family: 'Roboto', sans-serif;
-    max-width: 600px;
-    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0px 30px 0px;
+ 
+   
 }
-
-.detalle {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #ff5722;
-    margin-bottom: 0.5rem;
-}
-
-.card-content {
-    margin-top: 1.5rem;
-    font-size: 1.1rem;
-    line-height: 1.4;
-}
-
 
 .imagen {
-    max-width: 100%;
-    height: auto;
-    max-height: 70vh;
-    object-fit: contain;
-   margin-top: 1rem;
     display: block;
+    margin:1rem;
+    object-fit: contain;
+    max-width: 700px;
+    box-shadow: 0 4px 12px rgba(0, 225, 255, 0.1);
+}
+
+.sobre-mi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.mini-card {
+    text-align: center;
+}
+
+.mini-img {
+    width: 90%;
+    margin: 1rem;
+    object-fit: cover;
+    border-radius: 12px;
 }
 
 @media (max-width: 768px) {
-    .card {
-        padding: 0.8rem;
-        max-width: 95%;
-    }
+  
 
     .detalle {
-        font-size: 1.5rem;
-    }
-
-    .card-content {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .imagen {
-        max-height: 50vh;
+        max-width: 360px;
+
     }
+
 }
