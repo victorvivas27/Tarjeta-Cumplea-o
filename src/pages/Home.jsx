@@ -89,7 +89,7 @@ const Home = () => {
                 },
                 {
                     titulo: "Comida",
-                    texto: "Sus favoritas son el Sushi, asadito y empandas de su Abuela.", imagen: evento.theo_comida
+                    texto: "Sus favoritas son el Sushi, asadito y empanadas de su Abuela.", imagen: evento.theo_comida
 
                 },
                 {
