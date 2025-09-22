@@ -44,8 +44,9 @@ const Card = ({ selected }) => {
                                     animate={{ opacity: 1, scale: 1 }}
                                     transition={{ duration: 0.5, delay: i * 0.1 }}
                                 >
+                                    <h2 style={{textAlign:"start",marginLeft:"1rem"}}>{item.titulo}</h2>
                                     <img src={item.imagen} alt={item.texto} className="mini-img" />
-                                    <p>{item.texto}</p>
+                                    <p style={{margin:"1rem"}}>{item.texto}</p>
                                 </motion.div>
                             ))}
                         </div>

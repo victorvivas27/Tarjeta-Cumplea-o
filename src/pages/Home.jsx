@@ -76,25 +76,30 @@ const Home = () => {
             label: "🎈 Sobre mí",
             items: [
                 {
+                    titulo: "Deporte",
                     texto:
-                        "Deporte: Ama el deporte. Juega al Basquet, Futbol y hace natación. Los tres sus preferidos. Es de  Boca, Belgrano, los cruzados y.. bue multicultural!",
+                        "Ama el deporte. Juega al Basquet, Futbol y hace natación. Es de  Boca, Belgrano, los cruzados y.. bue multicultural!",
                     imagen: evento.theo_deportes
                 },
 
                 {
-                    texto: "Juegos: Fans de Mario. Ama compartir momentos de caminata y parques con sus amigos.", imagen: evento.theo_juegos
+                    titulo: "Juegos",
+                    texto: "Fans de Mario,juegos de mesa y libros de aventuras.", imagen: evento.theo_juegos
 
                 },
                 {
-                    texto: "Comida: Sus favoritas con el Sushi, asadito y empandas de su Abuela.", imagen: evento.theo_comida
+                    titulo: "Comida",
+                    texto: "Sus favoritas son el Sushi, asadito y empandas de su Abuela.", imagen: evento.theo_comida
 
                 },
                 {
-                    texto: "Amigos: Es muy sociable y feliz cuando está rodeado de sus amigos. Compartir con ellos lo hace reír y disfrutar cada momento.",
+                    titulo: "Amigos",
+                    texto: "Es muy sociable y feliz cuando está rodeado de sus amigos. Compartir con ellos lo hace reír y disfrutar cada momento.",
                     imagen: evento.theo_amigos
                 },
                 {
-                    texto: "Familia: Ama visitar y compartir con su familia. Siempre está feliz cuando se reencuentra con sus seres queridos.",
+                    titulo: "Familia",
+                    texto: "Ama visitar y compartir con su familia. Siempre está feliz cuando se reencuentra con sus seres queridos.",
                     imagen: evento.theo_familia
                 },
             ],

@@ -8,7 +8,7 @@
 
 
 .nav-button {
-    color: var(--color);
+    color: var(--color_02);
     background: var(--gradiente_01);
     padding: 0.4rem 0.9rem;
     border-radius: 25px;
