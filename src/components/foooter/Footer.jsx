@@ -1,5 +1,5 @@
 import "./Footer.css"
-const icon_victor = "Logo_Victor.svg"
+const icon_victor = "logo_v3_01-10-2025.png"
 import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {

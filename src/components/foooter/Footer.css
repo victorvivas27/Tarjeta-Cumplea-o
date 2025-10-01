@@ -17,7 +17,9 @@
 }
 
 .logo-footer {
-    width: 140px;
+    width: 50px;
+    border-radius: 50%;
+    
 }
 .wa-link {
     display: flex;
