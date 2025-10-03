@@ -27,5 +27,7 @@ jobs:
             wait-on: ${{ secrets.CYPRESS_BASE_URL }}
          env:
            CYPRESS_BASE_URL: ${{ secrets.CYPRESS_BASE_URL }}
-       
 
+           record: true 
+           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
+           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
