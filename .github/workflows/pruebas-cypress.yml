@@ -22,7 +22,10 @@ jobs:
        - name: Ejecutar Cypress
          uses: cypress-io/github-action@v6
          with:
-           build: npm run build
-           start: npm run preview
-          
+            build: npm run build
+            start: npm run preview -- --port 4173
+            wait-on: 'http://localhost:4173'
+         env:
+           ENV_FILE: .env.ci
+       
 
