@@ -9,5 +9,5 @@ export default defineConfig({
      },
      video: true,
      videoCompression: 32,
-     projectId: process.env.CYPRESS_PROJECT_ID,
+     projectId: "n51g5h",
 });
