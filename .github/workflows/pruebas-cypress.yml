@@ -18,6 +18,8 @@ jobs:
 
        - name: Instalar dependencias
          run: npm ci
+       - name: Empaquetar el proyecto
+         run: npm run build  
 
        - name: Ejecutar Cypress
          uses: cypress-io/github-action@v6
