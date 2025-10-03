@@ -25,6 +25,7 @@ jobs:
             build: npm run build
             start: npm run preview -- --port 4173
             wait-on: ${{ secrets.CYPRESS_BASE_URL }}
+            
          env:
            CYPRESS_BASE_URL: ${{ secrets.CYPRESS_BASE_URL }}
 
