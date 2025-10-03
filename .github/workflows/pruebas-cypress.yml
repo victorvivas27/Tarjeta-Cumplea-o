@@ -24,8 +24,8 @@ jobs:
          with:
             build: npm run build
             start: npm run preview -- --port 4173
-            wait-on: 'http://localhost:4173'
+            wait-on: ${{ secrets.CYPRESS_BASE_URL }}
          env:
-           ENV_FILE: .env.ci
+           CYPRESS_BASE_URL: ${{ secrets.CYPRESS_BASE_URL }}
        
 
