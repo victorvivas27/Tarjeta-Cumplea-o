@@ -10,6 +10,6 @@ export default defineConfig({
     
       
     },
-     baseUrl:"http://localhost:4173"
+     baseUrl:"http://localhost:4173/"
   },
 });
