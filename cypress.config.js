@@ -9,5 +9,5 @@ export default defineConfig({
      },
      video: true,
      videoCompression: 32,
-     projectId: "n51g5h",
+     projectId: "q7w16c",
 });
