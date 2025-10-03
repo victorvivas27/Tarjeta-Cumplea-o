@@ -25,3 +25,5 @@ jobs:
            build: npm run build
            start: npm run preview
            wait-on: 'http://localhost:4173'
+           browser: chrome
+
